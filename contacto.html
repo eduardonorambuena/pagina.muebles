@@ -57,6 +57,22 @@
         .btn-whatsapp:hover {
             background-color: #128C7E; /* Color de WhatsApp al pasar el mouse */
         }
+
+        /* Estilos para el botón de Google Maps */
+        .btn-maps {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4285F4; /* Color de Google Maps */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn-maps:hover {
+            background-color: #1A73E8; /* Color de Google Maps al pasar el mouse */
+        }
     </style>
 </head>
 <body>
@@ -68,8 +84,23 @@
         <!-- Botón para enviar mensaje a WhatsApp -->
         <a href="https://api.whatsapp.com/send?phone=+56971657043&text=Hola,%20estoy%20interesado%20en%20sus%20muebles" class="btn-whatsapp">Contactar por WhatsApp</a>
 
+        <!-- Botón para abrir Google Maps y marcar una dirección específica -->
+        <button onclick="abrirMaps()" class="btn-maps">Ver en Google Maps</button>
+
         <!-- Botón para volver atrás -->
         <a href="index.html" class="btn-regresar">Volver al inicio</a>
     </div>
+
+    <!-- Script para abrir Google Maps -->
+    <script>
+        function abrirMaps() {
+            // Dirección específica para abrir en Google Maps
+            var direccion = 'Arza 1707, Melipilla, Región Metropolitana';
+            // URL para abrir Google Maps con la dirección
+            var urlMaps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(direccion);
+            // Abrir en una nueva pestaña del navegador
+            window.open(urlMaps, '_blank');
+        }
+    </script>
 </body>
 </html>
