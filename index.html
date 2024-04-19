@@ -1,6 +1,12 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muebles Don TATI</title>
-<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles Don TATI</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega los estilos de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -18,16 +24,209 @@
 </section>
 <section id="productos">
     <h2>Nuestros Productos</h2>
-    <!-- Aquí puedes agregar imágenes y descripciones de tus muebles -->
-    <div class="producto">
-        <img src="mesa_redonda.jpeg" alt="Mueble 1">
-        <h3>Mueble 1</h3>
-        <p>Descripción del mueble 1.</p>
-        <p>Precio: $100</p>
+    <!-- Carrusel de imágenes -->
+    <div id="carouselProductos" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="mesa_redonda.jpeg" class="d-block w-100" alt="Mueble 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 1</h5>
+                    <p>Descripción del mueble 1. Precio: $100</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="mesa2.jpeg" class="d-block w-100" alt="Mueble 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 2</h5>
+                    <p>Descripción del mueble 2. Precio: $150</p>
+                </div>
+            </div>
+            <!-- Agrega más imágenes aquí -->
+            <!-- Imagen 3 -->
+            <div class="carousel-item">
+                <img src="IMG-20240417-WA0013.jpg" class="d-block w-100" alt="Mueble 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 3</h5>
+                    <p>Descripción del mueble 3.</p>
+                </div>
+            </div>
+            <!-- Imagen 4 -->
+            <div class="carousel-item">
+                <img src="IMG-20240417-WA0014.jpg" class="d-block w-100" alt="Mueble 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 4</h5>
+                    <p>Descripción del mueble 4.</p>
+                </div>
+            </div>
+            <!-- Imagen 5 -->
+            <div class="carousel-item">
+                <img src="IMG-20240417-WA0016.jpg" class="d-block w-100" alt="Mueble 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 5</h5>
+                    <p>Descripción del mueble 5.</p>
+                </div>
+            </div>
+            <!-- Imagen 6 -->
+            <div class="carousel-item">
+                <img src="IMG-20240417-WA0017.jpg" class="d-block w-100" alt="Mueble 6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 6</h5>
+                    <p>Descripción del mueble 6.</p>
+                </div>
+            </div>
+            <!-- Imagen 7 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0030.jpg" class="d-block w-100" alt="Mueble 7">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 7</h5>
+                    <p>Descripción del mueble 7.</p>
+                </div>
+            </div>
+            <!-- Imagen 8 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0031.jpg" class="d-block w-100" alt="Mueble 8">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 8</h5>
+                    <p>Descripción del mueble 8.</p>
+                </div>
+            </div>
+            <!-- Imagen 9 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0032.jpg" class="d-block w-100" alt="Mueble 9">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 9</h5>
+                    <p>Descripción del mueble 9.</p>
+                </div>
+            </div>
+            <!-- Imagen 10 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0033.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 11 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0034.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 12 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0035.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 13 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0036.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 14 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0037.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 15 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0038.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 16 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0039.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 17 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0040.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 18 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0041.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 19 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0042.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 20 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0043.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 21 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0044.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 22 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0045.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 23 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0046.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 24 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0047.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+                <!-- Imagen 25 -->
+            <div class="carousel-item">
+                <img src="IMG-20240418-WA0048.jpg" class="d-block w-100" alt="Mueble 10">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mueble 10</h5>
+                    <p>Descripción del mueble 10.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
     </div>
-    <div class="producto">
-        <img src="mesa2.jpeg" alt="Mueble 2">
-        <h3>Mueble 2</h3>
-        <p>Descripción del mueble 2.</p>
-        <p>Precio: $150</p>
-    </div>
+</section>
+
+<!-- Agrega los scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script> <!-- Tu script personalizado -->
+</body>
+</html>
