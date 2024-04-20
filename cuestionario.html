@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <h1>Cuestionario</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="respuesta1">Pregunta 1:</label>
+        <input type="text" id="respuesta1" name="respuesta1"><br><br>
+
+        <label for="respuesta2">Pregunta 2:</label>
+        <input type="text" id="respuesta2" name="respuesta2"><br><br>
+
+        <button type="submit">Enviar respuestas</button>
+    </form>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe normalmente
+
+            // Obtener respuestas del formulario
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var respuesta1 = document.getElementById('respuesta1').value;
+            var respuesta2 = document.getElementById('respuesta2').value;
+
+            // Crear objeto con respuestas
+            var respuestas = {
+                nombre: nombre,
+                email: email,
+                respuesta1: respuesta1,
+                respuesta2: respuesta2
+            };
+
+            // Almacenar respuestas en el almacenamiento local
+            localStorage.setItem('respuestas', JSON.stringify(respuestas));
+
+            alert('Respuestas enviadas correctamente');
+        });
+    </script>
+</body>
+</html>
