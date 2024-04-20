@@ -67,3 +67,27 @@ footer {
     right: 100px; /* Ajusta la distancia desde la derecha */
     color: #111111fb; /* Color de texto blanco */
 }
+
+/* Estilos para el reloj */
+#reloj {
+    font-family: Arial, sans-serif; /* Utiliza una fuente legible */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: #333; /* Color de texto más oscuro */
+    background-color: #fff; /* Fondo blanco */
+    padding: 15px 20px; /* Espacio interno alrededor del reloj */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centra el texto */
+    width: fit-content; /* Ajusta el ancho automáticamente al contenido */
+    position: fixed; /* Posición fija en la esquina superior izquierda */
+    top: 20px; /* Espacio desde la parte superior */
+    left: 20px; /* Espacio desde la izquierda */
+    z-index: 1000; /* Asegura que el reloj esté por encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilos para cuando se pasa el mouse sobre el reloj */
+#reloj:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
