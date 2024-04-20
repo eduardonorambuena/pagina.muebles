@@ -4,10 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fondo.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #ffffff; /* Cambia el fondo a blanco */
     position: relative; /* Añade una posición relativa al cuerpo */
 }
 
