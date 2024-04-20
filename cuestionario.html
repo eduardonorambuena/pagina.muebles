@@ -24,6 +24,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centrar los elementos del formulario */
         }
 
         label {
@@ -55,6 +56,23 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        /* Estilos para el botón de volver al inicio */
+        .volver-inicio {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; /* Espacio superior */
+        }
+
+        .volver-inicio:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +90,10 @@
         <label for="respuesta2">Pregunta 2:</label>
         <input type="text" id="respuesta2" name="respuesta2">
 
-        <button type="submit">Enviar respuestas</button>
+        <button type="submit">Enviar Pregunta</button>
+
+        <!-- Botón para volver al inicio -->
+        <a href="index.html" class="volver-inicio">Volver al inicio</a>
     </form>
 
     <!-- Agrega tu script JavaScript aquí -->

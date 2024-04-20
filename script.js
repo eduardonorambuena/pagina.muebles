@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     "&body=" + encodeURIComponent(datosCorreo.cuerpo));
     });
 
-    // Función para mostrar el reloj
-    function mostrarHora() {
+    // Función para crear y actualizar el reloj
+    function actualizarReloj() {
         var fecha = new Date();
         var horas = fecha.getHours();
         var minutos = fecha.getMinutes();
@@ -60,10 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var horaActual = horas + ":" + minutos + ":" + segundos;
 
         // Actualiza el elemento HTML con la hora actual
-        document.getElementById("hora").innerText = horaActual;
+        document.getElementById("reloj").innerText = horaActual;
 
-        // Llama a esta función cada segundo para actualizar la hora
-        setTimeout(mostrarHora, 1000);
+        // Llama a esta función nuevamente después de 1 segundo
+        setTimeout(actualizarReloj, 1000);
     }
 
     // Función auxiliar para agregar un cero delante de los números menores de 10
@@ -71,6 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return (numero < 10 ? "0" : "") + numero;
     }
 
-    // Llama a la función para mostrar la hora al cargar la página
-    mostrarHora();
+    // Llama a la función para crear y actualizar el reloj al cargar la página
+    actualizarReloj();
 });

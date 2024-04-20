@@ -248,7 +248,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="scripts.js"></script> 
 <!-- Agrega el reloj -->
-<div id="hora"></div>
+<div id="reloj" style="position: fixed; top: 20px; right: 20px; font-size: 24px; color: blue; border: 2px solid red; padding: 10px;"></div>
+
+
+<!-- Estilo para el marco del reloj -->
+<style>
+    #reloj-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 100px; /* Ancho del marco */
+        height: 40px; /* Altura del marco */
+        background-color: blue; /* Color de fondo del marco */
+        border: 2px solid red; /* Grosor y color del borde del marco */
+        border-radius: 5px; /* Bordes redondeados */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hora {
+        color: red; /* Color de los números */
+    }
+</style>
 
 <!-- Script del reloj -->
 <script>
@@ -269,7 +291,11 @@
             var horaActual = horas + ":" + minutos + ":" + segundos;
 
             // Actualiza el elemento HTML con la hora actual
-            document.getElementById("hora").innerText = horaActual;
+            var reloj = document.getElementById("reloj");
+            reloj.innerText = horaActual;
+            reloj.style.backgroundColor = "blue";
+            reloj.style.color = "red";
+            reloj.style.border = "2px solid red";
 
             // Llama a esta función cada segundo para actualizar la hora
             setTimeout(mostrarHora, 1000);
@@ -283,6 +309,22 @@
         // Llama a la función para mostrar la hora al cargar la página
         mostrarHora();
     });
+</script>
+
+</script>
+
+</script>
+
+</script>
+
+</script>
+
+</script>
+
+</script>
+
+</script>
+
 </script>
 
 </body>
