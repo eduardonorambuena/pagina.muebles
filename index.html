@@ -279,7 +279,7 @@
 <!-- Script del reloj -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Función para mostrar el reloj
+            // Función para mostrar el reloj
         function mostrarHora() {
             var fecha = new Date();
             var horas = fecha.getHours();
@@ -302,7 +302,7 @@
             setTimeout(mostrarHora, 1000);
         }
 
-        // Función auxiliar para agregar un cero delante de los números menores de 10
+            // Función auxiliar para agregar un cero delante de los números menores de 10
         function agregarCeroDelante(numero) {
             return (numero < 10 ? "0" : "") + numero;
         }

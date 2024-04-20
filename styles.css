@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #f3f0f0;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -84,4 +84,10 @@ footer {
 /* Estilo para resaltar el reloj al pasar el mouse */
 #reloj:hover {
     background-color: #F0F0F0; /* Cambia el fondo al pasar el mouse */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #000; /* Color negro para el texto de las descripciones */
+    font-weight: bold; /* Hace que el texto sea más grueso */
 }
