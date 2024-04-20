@@ -43,4 +43,34 @@ document.addEventListener("DOMContentLoaded", function() {
                     "?subject=" + encodeURIComponent(datosCorreo.asunto) +
                     "&body=" + encodeURIComponent(datosCorreo.cuerpo));
     });
+
+    // Función para mostrar el reloj
+    function mostrarHora() {
+        var fecha = new Date();
+        var horas = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var segundos = fecha.getSeconds();
+
+        // Agrega un cero delante de los números menores de 10
+        horas = agregarCeroDelante(horas);
+        minutos = agregarCeroDelante(minutos);
+        segundos = agregarCeroDelante(segundos);
+
+        // Muestra la hora en el formato deseado
+        var horaActual = horas + ":" + minutos + ":" + segundos;
+
+        // Actualiza el elemento HTML con la hora actual
+        document.getElementById("hora").innerText = horaActual;
+
+        // Llama a esta función cada segundo para actualizar la hora
+        setTimeout(mostrarHora, 1000);
+    }
+
+    // Función auxiliar para agregar un cero delante de los números menores de 10
+    function agregarCeroDelante(numero) {
+        return (numero < 10 ? "0" : "") + numero;
+    }
+
+    // Llama a la función para mostrar la hora al cargar la página
+    mostrarHora();
 });
